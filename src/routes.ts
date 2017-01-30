@@ -8,14 +8,11 @@ function routesConfig($stateProvider: angular.ui.IStateProvider, $urlRouterProvi
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('app', {
+    .state('home', {
       url: '/',
-      component: 'app'
+      component: 'home'
     }).state('users', {
       url: '/users',
       component: 'users'
-    }).state('home', {
-      url: '/home',
-      component: 'home'
     });
 }

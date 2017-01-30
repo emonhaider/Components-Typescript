@@ -1,9 +1,33 @@
-<!--<div class="main-container">
-  <fountain-header></fountain-header>
-  <main class="main">-->
-    <div class="component">
-      <h2>{{$ctrl.text}}</h2>
-    </div>
-  <!--</main>
-  <fountain-footer></fountain-footer>
-</div>-->
+<div class="component">
+  <h2>{{$ctrl.text}}</h2>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in $ctrl.users">
+        <td>{{user.name}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <accordion>
+    <!--The first panel with heading 1-->
+    <accordion-panel heading="heading 1">
+      This a panel
+    </accordion-panel>
+    <!--The secoind panel with heading 2-->
+    <accordion-panel heading="Heading 2">
+      this is another panel
+    </accordion-panel>
+  </accordion>
+
+</div>
